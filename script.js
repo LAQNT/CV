@@ -14,7 +14,7 @@ console.log(getAge("1993-07-31"));
 function insertAge() {
   const span = document.createElement("SPAN");
   span.innerText = getAge("1993-07-31") + " years old";
-  document.querySelector(".info").appendChild(span);
+  document.querySelector(".age").appendChild(span);
 }
 
 insertAge();

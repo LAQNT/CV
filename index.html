@@ -23,28 +23,66 @@
   </head>
   <body>
     <div class="container">
-      <div class="navbar">
-        <span>LQ</span>
+      <!-- <div class="navbar">
         <button>Contact me</button>
-      </div>
-
+      </div> -->
       <div class="row">
         <div class="card presentation">
-          <h1>Laura Quintero</h1>
-          <div class="info">
-            <span>Web Developer</span>
-            <span>Architectural Designer</span>
+          <div class="name">
+            <h1>Laura Quintero Agudelo</h1>
+            <div class="name-btns">
+              <a href="#web-dev"
+                ><button>
+                  <i class="fa-solid fa-code"></i> Web Developer
+                </button></a
+              >
+              <a href="#arch"
+                ><button>
+                  <i class="fa-solid fa-ruler-combined"></i> Architectural
+                  Designer
+                </button></a
+              >
+            </div>
           </div>
-        </div>
-        <div class="card-2">
-          <div class="img-container">
-            <img src="./assets/img/PXL_20230425_161112935.png" alt="LQ" />
+          <div class="card-img">
+            <div class="img-container">
+              <img src="./assets/img/PXL_20230425_161112935.png" alt="LQ" />
+            </div>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="card skills">
+        <div class="card info">
+          <h2><i class="fa-solid fa-barcode"></i> Information</h2>
+
+          <span>Citizenship: <span>Colombian</span> </span>
+          <span>Residence: <span> Milano, Italy</span></span>
+          <span class="age">Age:</span>
+        </div>
+        <div class="card info">
+          <h2><i class="fa-regular fa-message"></i> Languages</h2>
+
+          <span>Spanish: <span>Mothertongue</span></span>
+          <span>English: <span>Professional</span></span>
+          <span>Italian: <span>Professional</span></span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card contact">
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/LAQNT"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href=""><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="web-dev" class="container">
+      <div class="row">
+        <div class="card skills web-dev">
           <div class="skill">
             <i class="fa-brands fa-html5"></i>
             <span>HTML 5</span>
@@ -66,7 +104,7 @@
             <span>React JS</span>
           </div>
           <div class="skill">
-            <i class="fa-brands fa-node"></i>
+            <i class="fa-brands fa-node-js"></i>
             <span>Node JS</span>
           </div>
           <div class="skill">
@@ -80,10 +118,131 @@
         </div>
       </div>
 
-      <div class="row"></div>
+      <div class="row">
+        <div class="card card-half web-dev">
+          <h2>Education</h2>
+          <div class="course-container">
+            <div class="course">
+              <div class="color-bar"></div>
+              <div class="course-info">
+                <span>Dec 2022 - Jul 2023</span>
+                <span>Full-Stack Web Development</span>
+                <span>Coding Bootcamp</span>
+                <span>EPICODE</span>
+              </div>
+              <div class="credentials"></div>
+            </div>
+            <div class="course">
+              <div class="color-bar"></div>
+              <div class="course-info">
+                <span>May 2023 - Jun 2023</span>
+                <span>Java Junior Developer</span>
+                <span>Coding Course</span>
+                <span>dot Academy</span>
+              </div>
+            </div>
+            <div class="course">
+              <div class="color-bar"></div>
+              <div class="course-info">
+                <span>Nov 2022 - May 2023</span>
+                <span>Web Development Bootcamp</span>
+                <span>Coding Bootcamp</span>
+                <span>Udemy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-half">
+          <div class="card professional web-dev">
+            <span>Sep 2023 - Actual</span>
+            <span>Junior Web Developer</span>
+            <span>RED Software Systems</span>
+            <span>Monza, Italy</span>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="container"></div>
+    <!-- --------- architecture ------ -->
+    <div id="arch" class="container">
+      <div class="row">
+        <div class="card skills arch">
+          <div class="skill">
+            <i class="fa-brands fa-html5"></i>
+            <span>AutoCad</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-css3-alt"></i>
+            <span>Revit</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-bootstrap"></i>
+            <span>Photoshop</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-js"></i>
+            <span>InDesign</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-react"></i>
+            <span>Sketchup</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-node"></i>
+            <span>Rhinoceros</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-envira"></i>
+            <span>Microsoft Office</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card card-half arch">
+          <div class="course-container">
+            <div class="course">
+              <div class="color-bar"></div>
+              <div class="course-info">
+                <span>Dec 2022 - Jul 2023</span>
+                <span>Full-Stack Web Development</span>
+                <span>Coding Bootcamp</span>
+                <span>EPICODE</span>
+              </div>
+              <div class="credentials"></div>
+            </div>
+            <div class="course">
+              <div class="color-bar"></div>
+              <div class="course-info">
+                <span>May 2023 - Jun 2023</span>
+                <span>Java Junior Developer</span>
+                <span>Coding Course</span>
+                <span>dot Academy</span>
+              </div>
+            </div>
+            <div class="course">
+              <div class="color-bar"></div>
+              <div class="course-info">
+                <span>Nov 2022 - May 2023</span>
+                <span>Web Development Bootcamp</span>
+                <span>Coding Bootcamp</span>
+                <span>Udemy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-half">
+          <div class="card professional">
+            <span>Sep 2023 - Actual</span>
+            <span>Junior Web Developer</span>
+            <span>RED Software Systems</span>
+            <span>Monza, Italy</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/b0f0399816.js"
