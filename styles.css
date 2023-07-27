@@ -13,6 +13,7 @@
   --soft-gray: rgb(243, 243, 243);
   --black-gray: rgb(40, 40, 40);
   --dark-gray: rgb(120, 120, 120);
+  --dark-green: #54b45b;
   --soft-green: #6ce975;
   --green-shadow: #cce8cd;
   --soft-purple: rgb(60, 0, 213);
@@ -286,4 +287,10 @@ button i {
   flex-direction: column;
   text-align: right;
   align-self: first baseline;
+}
+
+/* ---- arch ---- */
+.skill img {
+  height: 2rem;
+  /* color: var(--soft-green); */
 }
