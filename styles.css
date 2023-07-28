@@ -9,19 +9,19 @@
 :root {
   --main-bg-color: #181410;
   /* --main-bg-color: #f9f4f0; */
-  --secondary-color: #d6d6d6;
+  --secondary-color: #f7f7f7;
   --soft-gray: rgb(243, 243, 243);
   --black-gray: rgb(40, 40, 40);
   --dark-gray: rgb(120, 120, 120);
-  --dark-green: #54b45b;
+  --dark-green: #64c28e;
   --soft-green: #6ce975;
-  --green-shadow: #cce8cd;
+  --green-shadow: #bfd1c0;
   --soft-purple: rgb(60, 0, 213);
   --purple-shadow: rgb(194, 189, 221);
 }
 
 body {
-  background-color: var(--main-bg-color);
+  background-color: var(--secondary-color);
 }
 /* ----- navbar ------ */
 .navbar {
@@ -71,14 +71,24 @@ body {
   box-shadow: 10px 7px 0px var(--dark-gray);
 }
 
+#web-dev,
+#arch {
+  margin-top: 15rem;
+}
+
 .web-dev {
   border: 1px solid var(--soft-purple);
   box-shadow: 10px 7px 0px var(--purple-shadow);
 }
 
 .arch {
-  border: 1px solid var(--soft-green);
+  border: 1px solid var(--dark-green);
   box-shadow: 10px 7px 0px var(--green-shadow);
+}
+
+.subtitle {
+  color: black;
+  font-size: 2.5rem;
 }
 
 /* ----- first row ------ */
@@ -86,7 +96,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 75%; */
 }
 .name {
   display: flex;
@@ -228,6 +237,7 @@ button i {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  align-self: flex-start;
 }
 
 .course-container {
@@ -276,21 +286,57 @@ button i {
 }
 
 .course-info,
-.professional {
+.professional-info {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+}
+
+.professional-container:first-of-type .color-bar {
+  background-color: var(--soft-purple);
+  opacity: 100%;
 }
 
 .professional {
   display: flex;
   flex-direction: column;
   text-align: right;
-  align-self: first baseline;
+  align-self: flex-start;
+}
+
+.web-dev .credentials a {
+  color: var(--soft-purple);
 }
 
 /* ---- arch ---- */
 .skill img {
   height: 2rem;
-  /* color: var(--soft-green); */
+}
+
+.arch .course:first-child .color-bar {
+  background-color: var(--dark-green);
+  opacity: 100%;
+}
+
+.arch .course:nth-child(2) .color-bar {
+  background-color: var(--dark-green);
+  opacity: 80%;
+}
+
+.arch .course:nth-child(3) .color-bar {
+  background-color: var(--dark-green);
+  opacity: 50%;
+}
+
+.arch .course:last-of-type .color-bar {
+  background-color: var(--dark-green);
+  opacity: 30%;
+}
+
+.credentials {
+  margin-left: auto;
+}
+
+.arch .credentials a {
+  color: var(--dark-green);
 }
