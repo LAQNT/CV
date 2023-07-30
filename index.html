@@ -23,9 +23,6 @@
   </head>
   <body>
     <div class="container">
-      <!-- <div class="navbar">
-        <button>Contact me</button>
-      </div> -->
       <div class="row">
         <div class="card presentation">
           <div class="name">
@@ -73,9 +70,10 @@
         <div class="card contact">
           <a
             href="https://www.linkedin.com/in/laura-quintero-agudelo-a576a111a/"
+            target="_blank"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
-          <a href="https://github.com/LAQNT"
+          <a href="https://github.com/LAQNT" target="_blank"
             ><i class="fa-brands fa-github"></i
           ></a>
           <a href=""><i class="fa-solid fa-envelope"></i></a>
@@ -85,7 +83,9 @@
 
     <!-- -------------------- web-dev ------------------- -->
     <div id="web-dev" class="container">
-      <h2 class="subtitle">Web Development</h2>
+      <div class="card card-half web-dev">
+        <h2 class="subtitle">Web Development</h2>
+      </div>
       <div class="row">
         <div class="card skills web-dev">
           <div class="skill">
@@ -176,13 +176,13 @@
           <h2>Professional</h2>
 
           <div class="professional-container">
+            <div class="color-bar"></div>
             <div class="professional-info">
               <span>Sep 2023 - Actual</span>
               <span>Junior Web Developer</span>
               <span>RED Software Systems</span>
               <span>Monza, Italy</span>
             </div>
-            <div class="color-bar"></div>
           </div>
         </div>
       </div>
@@ -190,8 +190,9 @@
 
     <!-- --------- architecture ------ -->
     <div id="arch" class="container">
-      <h2 class="subtitle">Architecture</h2>
-
+      <div class="card card-half arch">
+        <h2 class="subtitle">Architecture</h2>
+      </div>
       <div class="row">
         <div class="card skills arch">
           <div class="skill">
@@ -235,7 +236,7 @@
               <div class="course-info">
                 <span>Sep 2018 - Dec 2020</span>
                 <span>Politecnico di Milano</span>
-                <span>Laurea Magistrale: Built Environment - Interiors</span>
+                <span>Master: Built Environment - Interiors</span>
                 <span>Milano, Italy</span>
               </div>
               <div class="credentials">
@@ -289,17 +290,26 @@
           </div>
         </div>
 
-        <div class="card-half card professional">
+        <div class="card-half card professional arch">
           <h2>Professional</h2>
 
-          <div class="">
-            <span>Sep 2023 - Actual</span>
-            <span>Junior Web Developer</span>
-            <span>RED Software Systems</span>
-            <span>Monza, Italy</span>
+          <div class="professional-container">
+            <div class="color-bar"></div>
+
+            <div class="professional-info">
+              <span>Sep 2023 - Actual</span>
+              <span>Junior Web Developer</span>
+              <span>RED Software Systems</span>
+              <span>Monza, Italy</span>
+            </div>
+            <div class="color-bar"></div>
           </div>
         </div>
       </div>
+      <a href="#top"
+                ><button>
+                  <i class="fa-solid fa-code"></i> Back to top
+                </button></a
     </div>
 
     <script

@@ -13,15 +13,15 @@
   --soft-gray: rgb(243, 243, 243);
   --black-gray: rgb(40, 40, 40);
   --dark-gray: rgb(120, 120, 120);
-  --dark-green: #64c28e;
-  --soft-green: #6ce975;
-  --green-shadow: #bfd1c0;
-  --soft-purple: rgb(60, 0, 213);
-  --purple-shadow: rgb(194, 189, 221);
+  --dark-orange: #ffc534;
+  --soft-orange: #ffe092;
+  --shadow-orange: #f8ebcc;
+  --soft-purple: rgb(100, 38, 255);
+  --purple-shadow: rgb(209, 206, 224);
 }
 
 body {
-  background-color: var(--secondary-color);
+  background-color: var(--black-gray);
 }
 /* ----- navbar ------ */
 .navbar {
@@ -36,22 +36,9 @@ body {
   top: 0;
 }
 
-/* .navbar span {
-  font-size: 2rem;
-  font-weight: 800;
-  opacity: 50%;
-} */
-
-/* .navbar button {
-  padding: 0.5rem;
-  background-color: white;
-  box-shadow: 5px 5px 0px black;
-  border-radius: 0.3rem;
-} */
 /* ----- general elements ------ */
-
 .container {
-  margin: 7rem 10%;
+  margin: 5rem 10%;
 }
 
 .row {
@@ -73,7 +60,8 @@ body {
 
 #web-dev,
 #arch {
-  margin-top: 15rem;
+  margin-top: 10rem;
+  padding-top: 3.5rem;
 }
 
 .web-dev {
@@ -82,13 +70,14 @@ body {
 }
 
 .arch {
-  border: 1px solid var(--dark-green);
-  box-shadow: 10px 7px 0px var(--green-shadow);
+  border: 1px solid var(--dark-orange);
+  box-shadow: 10px 7px 0px var(--shadow-orange);
 }
 
 .subtitle {
   color: black;
   font-size: 2.5rem;
+  font-weight: 900;
 }
 
 /* ----- first row ------ */
@@ -138,11 +127,13 @@ button i {
 }
 
 .name a:first-of-type button {
-  background-color: var(--purple-shadow);
+  background-color: rgb(171, 170, 255);
+  transition: 0.2s;
 }
 
 .name a:last-of-type button {
-  background-color: var(--green-shadow);
+  background-color: var(--dark-orange);
+  transition: 0.2s;
 }
 
 .name a:first-of-type button:hover {
@@ -150,8 +141,7 @@ button i {
   border: 1px solid var(--dark-gray);
 }
 .name a:last-of-type button:hover {
-  background-color: rgb(228, 255, 196);
-  transition: 0.08s;
+  background-color: var(--soft-orange);
 }
 
 /* ----- row II info ------ */
@@ -179,10 +169,6 @@ button i {
   font-weight: 400;
 }
 
-.card-img {
-  /* margin: auto; */
-}
-
 .img-container {
   border-radius: 50%;
   padding: 0;
@@ -203,9 +189,19 @@ button i {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
   margin: 0 30%;
+  border-radius: 2rem;
+}
+
+.contact a {
+  color: #000000;
+  transition: 0.2s;
+}
+
+.contact a:hover {
+  opacity: 0.6;
 }
 
 /* ----- third row ------ */
@@ -314,22 +310,22 @@ button i {
 }
 
 .arch .course:first-child .color-bar {
-  background-color: var(--dark-green);
+  background-color: var(--dark-orange);
   opacity: 100%;
 }
 
 .arch .course:nth-child(2) .color-bar {
-  background-color: var(--dark-green);
+  background-color: var(--dark-orange);
   opacity: 80%;
 }
 
 .arch .course:nth-child(3) .color-bar {
-  background-color: var(--dark-green);
+  background-color: var(--dark-orange);
   opacity: 50%;
 }
 
 .arch .course:last-of-type .color-bar {
-  background-color: var(--dark-green);
+  background-color: var(--dark-orange);
   opacity: 30%;
 }
 
@@ -338,5 +334,5 @@ button i {
 }
 
 .arch .credentials a {
-  color: var(--dark-green);
+  color: var(--dark-orange);
 }
