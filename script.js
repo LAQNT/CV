@@ -1,3 +1,5 @@
+"use strict";
+
 function getAge(dateString) {
   var today = new Date();
   var birthDate = new Date(dateString);
@@ -18,3 +20,36 @@ function insertAge() {
 }
 
 insertAge();
+
+// ---- modal ---
+const modal = document.querySelector(".modal");
+const btnCloseModal = document.querySelector(".close-modal");
+const btnOpenModal = document.querySelectorAll(".open-modal");
+const modalImg = document.getElementById("modalImg");
+
+console.log(btnOpenModal);
+
+btnOpenModal.forEach((button, index) => {
+  button.addEventListener("click", () =>
+    showModal("assets/img/certifications/" + (index + 1) + ".jpg")
+  );
+});
+
+const showModal = (imageUrl) => {
+  modalImg.src = imageUrl;
+  modal.classList.remove("hidden");
+};
+
+const closeModal = () => {
+  modal.classList.add("hidden");
+};
+
+btnCloseModal.addEventListener("click", closeModal);
+
+// modal.addEventListener("click", closeModal);
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+};
