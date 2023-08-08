@@ -176,14 +176,15 @@ button i {
 .img-container {
   border-radius: 50%;
   overflow: hidden;
-  width: 9rem;
-  height: 9rem;
+  width: 8rem;
+  height: 8rem;
   background-color: rgb(255, 255, 255);
   border: 0.5px solid var(--dark-gray);
+  object-position: center;
 }
 
 .img-container img {
-  height: 11rem;
+  height: 10rem;
   object-position: center;
 }
 
@@ -194,6 +195,7 @@ button i {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  gap: 1rem;
 }
 
 .info-contact {
@@ -457,10 +459,93 @@ button i {
   display: none;
 }
 
-iframe {
+/* ---- portfolio arch ----- */
+.portfolio img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.portfolio {
+  border-radius: 0.3rem;
+  border: solid 1px var(--shadow-orange);
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
   margin-top: 1rem;
-  min-height: 70vh;
-  width: 100%;
-  border: 1px solid var(--dark-orange);
-  border-radius: 0.5rem;
+}
+
+.portfolio::before {
+  content: " ";
+  opacity: 25%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition-duration: 0.2s;
+  transform: translateY(-100%);
+}
+
+.web-dev .portfolio::before {
+  background-color: var(--soft-purple);
+}
+
+.arch .portfolio::before {
+  background-color: var(--dark-orange);
+}
+
+.go-to {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s, transform 0.2s;
+  transform: translateY(100%);
+}
+
+.arch .go-to {
+  text-shadow: 2px 2px 0px rgba(255, 211, 108, 0.595);
+  background-color: rgba(129, 114, 80, 0.9);
+  color: rgb(48, 48, 48);
+}
+
+.web-dev .go-to {
+  text-shadow: 2px 2px 0px rgba(147, 108, 255, 0.595);
+  background-color: rgba(141, 131, 185, 0.941);
+  color: rgb(25, 25, 25);
+}
+
+.portfolio:hover .go-to {
+  height: 25%;
+  transform: translateY(0);
+}
+
+.portfolio:hover .go-to {
+  height: 25%;
+  transform: translateY(0);
+}
+
+.portfolio:hover::before {
+  transform: translateY(0);
+}
+
+.portfolio.web-dev {
+  text-align: right;
+}
+
+/* ----- media queries ---- */
+@media only screen and (max-width: 900px) {
+  .name-btns {
+    display: flex;
+    flex-direction: column;
+  }
 }
