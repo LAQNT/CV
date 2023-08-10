@@ -732,6 +732,11 @@ footer span i {
   .modal img {
     max-width: 35rem;
   }
+
+  .portfolio:hover .go-to {
+    height: 40%;
+    transform: translateY(0);
+  }
 }
 
 @media only screen and (max-width: 500px) {
