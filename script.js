@@ -1,4 +1,10 @@
-"use strict";
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    alertNewView();
+  },
+  false
+);
 
 function getAge(dateString) {
   var today = new Date();
@@ -46,10 +52,43 @@ const closeModal = () => {
 
 btnCloseModal.addEventListener("click", closeModal);
 
-// modal.addEventListener("click", closeModal);
-
 window.onclick = function (event) {
   if (event.target == modal) {
     closeModal();
   }
 };
+
+// ---- telegram alerts -----
+function alertNewView() {
+  var xhr = new XMLHttpRequest();
+  xhr.open(
+    "POST",
+    "https://api.telegram.org/bot6637175577:AAGla0KngupdxryD9RvfC5Jy7vBYed3LPdA/sendMessage",
+    true
+  );
+  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.send(
+    JSON.stringify({
+      chat_id: "1157261407",
+      parse_mod: "markdown",
+      text: "-New visitor-",
+    })
+  );
+}
+
+function alertNewDownload() {
+  var xhr = new XMLHttpRequest();
+  xhr.open(
+    "POST",
+    "https://api.telegram.org/bot6637175577:AAGla0KngupdxryD9RvfC5Jy7vBYed3LPdA/sendMessage",
+    true
+  );
+  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.send(
+    JSON.stringify({
+      chat_id: "1157261407",
+      parse_mod: "markdown",
+      text: "-CV downloaded-",
+    })
+  );
+}
