@@ -121,6 +121,7 @@ body {
   gap: 1rem;
   justify-content: left;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .name a {
@@ -352,6 +353,15 @@ button i {
 
 .web-dev .portfolio {
   border: solid 1px var(--purple-shadow);
+}
+.portfolio .portfolio {
+  margin-top: 2rem;
+}
+
+.desc {
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
 }
 
 .web-dev .go-to {
