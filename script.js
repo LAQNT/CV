@@ -87,7 +87,7 @@ function alertNewDownload() {
   xhr.send(
     JSON.stringify({
       chat_id: "1157261407",
-      parse_mod: "markdown",
+      parse_mode: "markdown",
       text: "-CV downloaded-",
     })
   );
