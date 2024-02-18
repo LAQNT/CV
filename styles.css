@@ -22,7 +22,6 @@ html {
 
 :root {
   --main-bg-color: #181410;
-  /* --main-bg-color: #f9f4f0; */
   --secondary-color: #f7f7f7;
   --soft-gray: rgb(243, 243, 243);
   --black-gray: rgb(40, 40, 40);
@@ -205,18 +204,20 @@ button i {
 }
 
 .img-container {
+    position: relative;
   border-radius: 50%;
   overflow: hidden;
-  width: 8rem;
-  height: 8rem;
+  width: 9rem;
+  height: 9rem;
   background-color: rgb(255, 255, 255);
   border: 0.5px solid var(--dark-gray);
-  object-position: center;
 }
 
 .img-container img {
-  height: 10rem;
-  object-position: center;
+  position: absolute;
+    height: 12rem;
+  left: .7rem;
+  bottom: -2rem;
 }
 
 /* ------  contact ----- */
