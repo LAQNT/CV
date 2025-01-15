@@ -25,7 +25,7 @@ html {
   --secondary-color: #f7f7f7;
   --soft-gray: rgb(243, 243, 243);
   --black-gray: rgb(40, 40, 40);
-  --dark-gray: rgb(153, 153, 153);
+  --dark-gray: rgb(100, 100, 100);
   --dark-orange: #ffc534;
   --soft-orange: #ffe092;
   --shadow-orange: #ffe8b1f4;
@@ -340,6 +340,11 @@ button i {
 .web-dev .professional-container:first-of-type .color-bar {
   background-color: var(--soft-purple);
   opacity: 100%;
+}
+
+.web-dev .professional-container:last-child .color-bar {
+  background-color: var(--soft-purple);
+  opacity: 60%;
 }
 
 .professional {
